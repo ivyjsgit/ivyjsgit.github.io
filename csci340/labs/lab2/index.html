@@ -1,25 +1,26 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Pinyon+Script&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
     <title>Patience Tree Brewery</title>
 </head>
 
 <body>
 
     <header>
-        <div class="navbar navbar-expand-lg navbar-left">
-            <div class="navbar-brand logo ">
+        <div class="navbar navbar-expand-lg navbar-left sticky-top sticky row">
+            <div class="navbar-brand logo black">
                 <!-- <span><h3 class="logotext navbar">Patience Tree Brewery</h3></span> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="https://img.icons8.com/small/16/000000/menu.png">
                     <span class="navbar-toggler-icon"> </span>
-                    <h3 class="logotext logo" id="logo-button">
+                    <h3 class="logotext logo black" id="logo-button">
                         Patience Tree Brewery
                     </h3>
                     <!-- <span><p>Swag</p></span> -->
@@ -34,14 +35,16 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="d-none d-lg-block " id="removeOnCollapse">
-                        <span><h3 class="logotext navbar logo">Patience Tree Brewery</h3></span>
+                        <a href="#">
+                            <span><h3 class="logotext navbar logo black">Patience Tree Brewery</h3></span>
+                        </a>
                     </div>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav black blackurls">
                         <li class="nav-item active">
                             <a href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Our Beers</a>
+                            <a href="#beers">Our Beers</a>
                         </li>
                         <li class="nav-item">
                             <a href="#">Store Locator</a>
@@ -56,7 +59,7 @@
             </nav>
         </div>
     </header>
-    <section>
+    <section class="navbar-fixed-top">
         <div class="jumbotron splash" id="main-img">
             <div class="row text-center">
                 <h1 class="title cover largetext">Over 100 years in the making</h1>
@@ -66,8 +69,9 @@
     </section>
 
 
-    <section class="nomargins">
-        <h4 class="text-center black vertcenter-text logo">Our Most Popular Brews</h4>
+    <section class="nomargins" id="beers">
+        <div></div>
+        <!-- <h4 class="text-center black vertcenter-text logo">Our Most Popular Brews</h4> -->
         <!-- <div class="row blackurls"> -->
         <div class="nomargins">
             <div class="splash montana nomargins text-center">
@@ -78,7 +82,7 @@
                         </h1>
                     </div>
                     <div class="col-sm-12">
-                        <h5 class="cover">A flavorful IPA with hints of Pine-sol</h3>
+                        <h5 class="cover montana-text">A flavorful IPA with hints of Pine-sol and lemon-scented air fresheners</h3>
                     </div>
                 </div>
             </div>
@@ -106,7 +110,7 @@
                                 </h1>
                             </div>
                             <div class="col-sm-12">
-                                <h5 class="cover">A unique IPA with notes of locally grown acorns and woodchips</h3>
+                                <h5 class="cover white">A unique IPA with notes of locally grown acorns and woodchips</h3>
                             </div>
 
                         </div>
