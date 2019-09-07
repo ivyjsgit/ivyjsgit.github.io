@@ -55,6 +55,7 @@ header nav {
     /* position: relative; */
     /* float: left; */
     /* text-align: left; */
+    color: white;
     font-family: 'Pinyon Script', cursive;
 }
 
@@ -88,6 +89,7 @@ h5 {
 }
 
 .largetext {
+    padding-top: 200px;
     font-size: 5em;
 }
 
@@ -136,8 +138,14 @@ h5 {
     background-image: url('https://images.pexels.com/photos/1128975/pexels-photo-1128975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 
+.montana-text {
+    color: black;
+    /* -webkit-text-stroke: 1px black;
+    stroke: 1px black; */
+}
+
 #main-img {
-    height: 75%;
+    height: 100%;
 }
 
 .arkansas {
@@ -172,16 +180,36 @@ a:hover {
     color: gray;
 }
 
-.nav-butts {
-    display: inline;
+a {
+    color: black;
 }
 
-.navbar-toggler-icon {
-    background-image: url('https://img.icons8.com/small/16/000000/menu.png')
+.nav-butts {
+    display: inline;
 }
 
 #logo-button {
     text-align: left;
     justify-content: left;
     display: inline;
+}
+
+body {
+    background-color: #ECE5F0;
+}
+
+h {
+    background-color: #ECE5F0;
+}
+
+li a {
+    font-family: 'EB Garamond', serif;
+}
+
+.sticky {
+    background-color: ECE5F0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
 }
