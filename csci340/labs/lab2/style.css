@@ -1,9 +1,20 @@
 .nav {
-    display: inline;
+    display: inline-block;
     justify-content: center;
     text-align: center;
+    margin: 20px;
+    margin-top: 0px;
+    padding-top: 5px;
     /* justify-content: flex-end; */
     /* margin-left: 10px; */
+}
+
+.logotext {
+    margin: 20px;
+}
+
+li {
+    margin: 20px;
 }
 
 header nav {
@@ -126,7 +137,7 @@ h5 {
 }
 
 #main-img {
-    height: 80%;
+    height: 75%;
 }
 
 .arkansas {
@@ -153,6 +164,7 @@ h5 {
     width: 100%;
     background-size: cover;
     background-position: center;
+    border-bottom: 0px;
     background-image: url('https://images.pexels.com/photos/1089930/pexels-photo-1089930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 
