@@ -1,32 +1,18 @@
-
-/* .logo{
-    display: inline;
-} */
-/* ul li{
-    display: inline;
-    justify-content: flex-end;
-
-} */
-ul{
-    list-style: none;
-}
-.nav{
+.nav {
     display: inline;
     justify-content: center;
     text-align: center;
     /* justify-content: flex-end; */
-
     /* margin-left: 10px; */
 }
+
 header nav {
     display: flex;
     justify-content: flex-end;
 }
-.title{
 
-}
-.splash{
-    display: flex;
+.splash {
+    /* display: flex; */
     align-items: center;
     height: 100%;
     width: 100%;
@@ -34,60 +20,76 @@ header nav {
     background-position: center;
     border-style: solid;
     border-color: darkslategrey;
-    border-left: 2px;
-    border-right: 2px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
     /* background-repeat: no-repeat; */
     background-image: url("https://images.unsplash.com/photo-1524230476179-d13bcb5e3ce6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
 }
-.splash-img{
+
+.splash-img {
     display: block;
     /* align-items: center; */
     /* max-width: 100%; */
     /* height: 100%; */
     width: 100%;
 }
-.cover{
+
+.cover {
     color: #ffffff;
     font-family: 'Pinyon Script', cursive;
-
 }
-.logo{
+
+.logo {
     /* position: relative; */
     /* float: left; */
     /* text-align: left; */
-    font-family: 'Pinyon Script', cursive;  
+    font-family: 'Pinyon Script', cursive;
 }
+
 header nav {
     display: flex;
     justify-content: flex-end;
 }
+
 .col-sm-4 a {
     margin: 25px 20px 15px;
     min-width: 60px;
     padding: 1px;
-  }
-.jumbotron{
-    justify-content: center;
+}
+
+.jumbotron {
+    /* background-color: rgba(0, 0, 0, 1) justify-content: center; */
     padding: 0px;
-    margin:0px;
+    margin: 0px;
+    margin-bottom: 0;
 }
-.text-center{
+
+.text-center {
+    /* padding-left: 25%; */
+    text-align: center;
+    margin: auto;
     justify-content: center;
 }
-h5{
+
+h5 {
     color: #ffffff;
 }
-.largetext{
+
+.largetext {
     font-size: 5rem;
 }
-.cover{
+
+.cover {
     margin-bottom: 50px;
 }
-.product{
+
+.product {
     justify-content: center;
     text-align: center;
 }
-.product-img{
+
+.product-img {
     width: 200px;
     height: 200px;
     border-color: bisque;
@@ -95,50 +97,65 @@ h5{
     border-width: 2px;
     /* height: 100px; */
 }
-.black{
-    color: black;
-}
-.white{
-    color:white;
-}
-.blackurls a{
-    color: black;
 
+.black {
+    color: black;
 }
-.vertcenter-text{
+
+.white {
+    color: white;
+}
+
+.blackurls a {
+    color: black;
+}
+
+.vertcenter-text {
     justify-content: center;
 }
-.montana{
+
+.montana {
+    margin: 0%;
     display: flex;
     align-items: center;
-    height: 95%;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-image: url('https://images.pexels.com/photos/1128975/pexels-photo-1128975.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
-#main-img{
-    height: 80%;
 
+#main-img {
+    height: 80%;
 }
-.arkansas{
+
+.arkansas {
+    margin: 0px;
     display: flex;
     align-items: center;
-    height: 99%;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-image: url('https://images.pexels.com/photos/1657156/pexels-photo-1657156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
-.nomargins{
-    margin: 0px;
+
+.nomargins {
+    margin: 0;
+    margin-bottom: 0;
 }
-.woodsman{
+
+.woodsman {
+    margin: 0px;
     display: flex;
     align-items: center;
-    height: 99%;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-image: url('https://images.pexels.com/photos/1089930/pexels-photo-1089930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+a:hover {
+    color: gray;
 }
