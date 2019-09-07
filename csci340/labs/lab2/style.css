@@ -181,5 +181,7 @@ a:hover {
 }
 
 #logo-button {
+    text-align: left;
+    justify-content: left;
     display: inline;
 }
