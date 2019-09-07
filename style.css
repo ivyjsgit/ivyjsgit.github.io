@@ -1,0 +1,19 @@
+.nav {
+    justify-content: flex-end;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    justify-content: left;
+    text-align: left;
+}
