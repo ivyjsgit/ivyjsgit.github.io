@@ -1,0 +1,31 @@
+body{
+    /* background-color: rgb(18, 53, 235); */
+    background-color: #FF69B4;
+    background-image: url(imgs/splash.jpg);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.title{
+    padding-top: 5%;
+    color: white;
+}
+.text-center {
+    /* padding-left: 25%; */
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+.content{
+    margin-top: 5%;
+    background-color: white;
+}
+.right{
+    justify-content: right;
+}
+.left{
+    justify-content: left;
+}
+.inline{
+    display:inline-block;
+}
