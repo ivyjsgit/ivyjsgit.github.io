@@ -4,18 +4,30 @@ $(document).ready(function(){
 
     (get_bitcoin_price());
     get_vat_percents();
-  
-});
+    add_rando_country();
 
+
+});
+function add_rando_country(){
+  var country_name = "Idk"
+  var country_vat = 99
+  var taxforone = ((vatpercent/100)*bitcoin_price).toFixed(2);
+  var flag = getFlags('IM');
+  console.log("???")
+
+  var thing = `<tr><td>${country_name}</td><td>${country_vat}%</td><td>${taxforone}</td><td>${flag}</td></tr>`;
+  $('#country_table').append(thing);
+
+}
 
 
 function get_bitcoin_price(){
-    
+
     $.getJSON('https://api.coindesk.com/v1/bpi/currentprice.json', function(json) {
 
         price = (JSON.stringify(json['bpi']['EUR']['rate']));
 
-    
+
         price = (price.replace(/,/g, ''));
         price = price.replace(/"/g,"")
         price = parseFloat(price)
@@ -39,6 +51,15 @@ function get_vat_percents(){
       as_json = JSON.parse(results)
       console.log(as_json['rates'])
       vat_json = as_json
+      for (i = 0; i < as_json['rates'].length; i++) {
+        var vatpercent = as_json['rates'][i]['periods'][0]['rates']['standard'];
+        var taxforone = ((vatpercent/100)*bitcoin_price).toFixed(2);
+        var flag = getFlags(as_json['rates'][i]['country_code']);
+        var thing = `<tr><td>${as_json['rates'][i]['name']}</td><td>${vatpercent}%</td><td>${taxforone}</td><td>${flag}</td></tr>`;
+        $('#country_table').append(thing);
+    }
+
+
 
     }
 
@@ -54,7 +75,7 @@ function find_VAT(){
 
 // https://stackoverflow.com/a/56009882
 function getFlags($code){
-    $code = strtoupper($code);
+    $code = $code.toUpperCase();
     if($code == 'AD') return '🇦🇩';
     if($code == 'AE') return '🇦🇪';
     if($code == 'AF') return '🇦🇫';
@@ -306,7 +327,4 @@ function getFlags($code){
     if($code == 'ZM') return '🇿🇲';
     return '🏳';
 }
-
-
-
-
+$("#gen").click(add_rando_country);
