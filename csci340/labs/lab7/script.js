@@ -5,6 +5,14 @@ $(document).ready(function(){
     (get_bitcoin_price());
     get_vat_percents();
     add_rando_country();
+    $("#spook").click(function(){
+      $('body').css("background-image", "url(./imgs/spooky.jpg)");  
+    
+    })
+    $("#meow").click(function(){
+      $('body').css("background-image", "url(./imgs/meow.jpg)");  
+    
+    })
 
 
 });
