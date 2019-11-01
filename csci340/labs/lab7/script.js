@@ -6,11 +6,11 @@ $(document).ready(function(){
     get_vat_percents();
     add_rando_country();
     $("#spook").click(function(){
-      $('body').css("background-image", "url(./imgs/spooky.jpg)");  
+      $('body').css("background-image", "url(https://images.unsplash.com/photo-1530210124550-912dc1381cb8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)");  
     
     })
     $("#meow").click(function(){
-      $('body').css("background-image", "url(./imgs/meow.jpg)");  
+      $('body').css("background-image", "url(https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)");  
     
     })
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
 function add_rando_country(){
   var country_name = "Idk"
   var country_vat = 99
-  var taxforone = ((vatpercent/100)*bitcoin_price).toFixed(2);
+  var taxforone = ((country_vat/100)*bitcoin_price).toFixed(2);
   var flag = getFlags('IM');
   console.log("???")
 
