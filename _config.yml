@@ -7,25 +7,22 @@ highlighter: rouge
 markdown: kramdown
 disqus: dbyll
 google_analytics: dbyll
-title: dbyll
+title: Ivy Jackson
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: Ivy Jackson
 
-description: Stylish Jekyll Theme
+description: Senior Computer Science Student
 author:
-  name: dbyll
-  email: dbyll@ismaildemirbilek.com
-  github: dbtek
-  twitter: dbtek
-  pinterest: asd123
-  linkedin: asd123
-  bio: Your stylish, minimalist theme!
-  email_md5: 726351295ec82e145928582f595aa3aa
+  name: Ivy Jackson
+  email: ivyjshdx@gmail.com
+  github: ivyjsgit
+  linkedin: ivy-jackson-381585177
+  bio: Senior Computer Science Major at Hendrix College, Intern at Disco Tray Studios
 
 rss_path: feed.xml
 categories_path: categories.html
