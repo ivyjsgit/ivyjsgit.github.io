@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	{% if site.google_analytics %}
+		{% include analytics.html %}
+	{% endif %}
+
 	<meta charset="utf-8">
 	<title>{{ page.title }}</title>
 	{% if page.description %}
@@ -31,9 +35,7 @@
 	-->
 
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/feed.xml">
-	{% if site.google_analytics and jekyll.environment == 'production' %}
-		{% include analytics.html %}
-	{% endif %}
+	
 </head>
 
 <body>
