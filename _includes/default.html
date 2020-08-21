@@ -31,6 +31,9 @@
 	-->
 
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/feed.xml">
+	{% if site.google_analytics and jekyll.environment == 'production' %}
+		{% include analytics.html %}
+	{% endif %}
 </head>
 
 <body>
