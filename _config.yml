@@ -16,13 +16,13 @@ defaults:
     values:
       title: Ivy Jackson
 
-description: Senior Computer Science Student
+description: iOS Developer at Apptegy
 author:
   name: Ivy Jackson
   email: ivyjshdx@gmail.com
   github: ivyjsgit
   linkedin: ivy-jackson-381585177
-  bio: Senior Computer Science Major at Hendrix College, Intern at Disco Tray Studios
+  bio: iOS Developer at Apptegy, fixer of bugs, maker of features
 
 rss_path: feed.xml
 categories_path: categories.html
